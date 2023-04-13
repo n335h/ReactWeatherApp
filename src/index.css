@@ -12,30 +12,35 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f8f8;
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 1.1rem;
 }
 
 h1 {
   font-size: 6rem;
+}
+span {
+  font-size: 2rem;
 }
 
 .app {
   width: 100%;
   height: 100vh;
   position: relative;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(8, 8, 8, 0.158);
   color: #fff;
+  margin: auto;
 }
 
 .app:before {
   content: '';
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.267);
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   top: 0;
   left: 0;
   z-index: -1;
@@ -49,10 +54,10 @@ h1 {
 
 .app input {
   padding: .7rem 1.5rem;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   border-radius: 25px;
   border: 1px solid rgba(255,255,255, 0.8);
-  background: rgba(255,255,255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
   color: #f8f8f8;
 }
 
@@ -82,6 +87,7 @@ h1 {
   right: -90%;
   transform-origin: 0 0;
   transform: rotate(269deg);
+  font-size: 1.5rem;
 }
 
 .app .bottom {
@@ -92,18 +98,9 @@ h1 {
   margin: 1rem auto;
   padding: 1rem;
   border-radius: 12px;
-  background-color: rgba(255,255,255, 0.02);
+  background-color: rgba(83, 83, 83, 0.295);
 }
 
 .bold {
   font-weight: 700;
 }
-
-
-
-
-
-
-
-
-
