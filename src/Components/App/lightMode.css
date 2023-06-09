@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.light {
+    background-color: #FFFFFF;
+    color: #242424;
+  }
+
+body {
+  font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 6rem;
+}
+span {
+  font-size: 2rem;
+}
+
+
+.app:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.app .search {
+  text-align: center;
+  padding: 1rem;
+
+}
+
+input {
+  padding: .7rem 1.5rem;
+  font-size: 0.8rem;
+  border-radius: 25px;
+  border: 3px solid rgba(68, 68, 68, 0.336);
+  background: rgba(238, 238, 238, 0.815);
+  color: #353535;
+}
+
+::placeholder {
+  color: #252525;
+}
+
+.container {
+  max-width: 700px;
+  height: 900px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(31, 31, 31, 0.2);
+  z-index: -1;
+  border-radius: 12px;
+}
+
+.app .top {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.description {
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+  font-size: 1.5rem;
+  align-self: flex-end;
+  order:4
+}
+
+.weatherIcon{
+  box-shadow: rgba(31, 31, 31, 0.2);
+}
+
+
+ .bottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  font-size: 0.5rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  z-index: 1;
+ 
+}
+
+.bold {
+  font-weight: 700;
+}
+button {
+  background-color: #FFFFFF;
+  border: 0;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 0.8rem;
+  padding: .75rem 1rem;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+ 
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  background-color: rgb(216, 135, 81);
+}
+
+button:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+button:focus-visible {
+  box-shadow: none;
+}
