@@ -44,7 +44,8 @@ function App() {
     >
       <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
       <div className="search">
-        <input
+        <input 
+        className='searchBar'
           value={location}
           onChange={(event) => setLocation(event.target.value)}
           onKeyPress={(event) => {
@@ -55,10 +56,11 @@ function App() {
           placeholder="Enter Location"
           type="text"
         />
-        <img
+        {/* <img
+          className="searchIcon"
           src="https://img.icons8.com/ios/50/000000/search--v1.png"
           alt=""
-        />
+        /> */}
         <button onClick={searchLocation}>Search</button>
       </div>
 
