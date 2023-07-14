@@ -8,9 +8,11 @@ function App() {
   const [data, setData] = useState({});
   const [location, setLocation] = useState('');
   const [description, setDescription] = useState('');
+  const [forecastData, setForecastData] = useState([]);
   const API_KEY = '57a034c92e9e4ba3b3d66b3b8af80d87';
+  const forcast_API = 'c2ddaae8e906ee377c791e45904c944b';
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}&units=metric`;
-
+  const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&appid=${API_KEY}&units=metric`;
   const [theme, setTheme] = useState('light'); //sets the theme to light mode
   const toggleTheme = () => {
     //toggles the theme
@@ -29,12 +31,21 @@ function App() {
   }, [theme]);
 
   const searchLocation = () => {
-    axios.get(url).then((response) => {
-      setData(response.data);
-      setDescription(response.data.weather[0].description);
-      console.log(response.data);
-    });
+    axios
+      .all([axios.get(url), axios.get(forecastUrl)])
+      .then(
+        axios.spread((currentWeather, forecastWeather) => {
+          setData(currentWeather.data);
+          setDescription(currentWeather.data.weather[0].description);
+          setForecastData(forecastWeather.data.list.slice(0, 5));
+        })
+      )
+      .catch((error) => {
+        console.error('Error fetching weather data:', error);
+      });
   };
+  console.log(data);
+  console.log(forecastData);
 
   return (
     <div
@@ -105,7 +116,29 @@ function App() {
         {data.sys ? <p> Sunrise {data.sys.sunrise} / Sunset {data.sys.sunset}</p>: null}
       </div> */}
           </div>
+          <div className="upcoming">
+            {forecastData.map((forecast, index) => (
+              <div className="day" key={index}>
+                <p className="dayName">
+                  {new Intl.DateTimeFormat(undefined, {
+                    hour: '2-digit',
+                    minute: '2-digit',
+                  }).format(new Date(forecast.dt_txt))}
+                </p>
+
+                {forecast.weather[0]?.icon && (
+                  <img
+                    className="weatherIcon"
+                    src={`http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`}
+                    alt={forecast.weather[0].description}
+                  />
+                )}
+                <p className="temp">{forecast.main.temp}&deg;C</p>
+              </div>
+            ))}
+          </div>
         </div>
+
         <div className="bottom">
           <div className="feels">
             {' '}

@@ -155,22 +155,3 @@ button:focus-visible {
   outline: none;
   color: #6d6d6d;
 }
-@media screen and (max-width: 767px) {
-  .bottom {
-    flex-direction: row;
-    background-color: #e2e2e2;
-  
-  }
-  .container {
-    flex-direction: column;
-    max-width: 90vw;
-  }
-
-  
-
-.bottomSmall {
-
-  margin-bottom: 0;
-  
-  }
-  }
