@@ -11,7 +11,7 @@
 .dark .container {
     background-color: #000000;
   }
-.dark .input {
+.dark input {
     color: white;
   }
 
@@ -73,10 +73,10 @@ padding: 1rem;
 input {
 padding: .7rem 1.5rem;
 font-size: 0.8rem;
-border-radius: 25px;
+border-radius: 10px;
 border: 1px solid rgba(105, 105, 105, 0.1);
 background: rgba(253, 253, 253, 0.1);
-color: #6d6d6d;
+color: #111111;
 width: 23vw;
 
 }
@@ -125,7 +125,7 @@ width: 70px;
 .upcoming {
 display: flex;
 flex-direction: row;
-justify-content: space-evenly;
+justify-content: space-between;
 align-items: center;
 border-radius: 12px;
 font-size: 0.8rem;
