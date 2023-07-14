@@ -44,8 +44,8 @@ function App() {
     >
       <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
       <div className="search">
-        <input 
-        className='searchBar'
+        <input
+          className="searchBar"
           value={location}
           onChange={(event) => setLocation(event.target.value)}
           onKeyPress={(event) => {
