@@ -135,7 +135,9 @@ padding: 1rem 1rem;
 
 
 }
-
+.weatherIcon {
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+}
 .bottomSmall {
 font-size: 0.7rem;
 align-self: flex-end;
