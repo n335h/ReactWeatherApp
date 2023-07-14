@@ -116,8 +116,8 @@ function App() {
         {data.sys ? <p> Sunrise {data.sys.sunrise} / Sunset {data.sys.sunset}</p>: null}
       </div> */}
           </div>
+
           <div className="forecast">
-           
             <div className="upcoming">
               {forecastData.map((forecast, index) => (
                 <div className="day" key={index}>
