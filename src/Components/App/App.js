@@ -10,7 +10,7 @@ function App() {
   const [description, setDescription] = useState('');
   const [forecastData, setForecastData] = useState([]);
   const API_KEY = '57a034c92e9e4ba3b3d66b3b8af80d87';
-  const forcast_API = 'c2ddaae8e906ee377c791e45904c944b';
+
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}&units=metric`;
   const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&appid=${API_KEY}&units=metric`;
   const [theme, setTheme] = useState('light'); //sets the theme to light mode
