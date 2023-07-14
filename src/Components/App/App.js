@@ -116,26 +116,29 @@ function App() {
         {data.sys ? <p> Sunrise {data.sys.sunrise} / Sunset {data.sys.sunset}</p>: null}
       </div> */}
           </div>
-          <div className="upcoming">
-            {forecastData.map((forecast, index) => (
-              <div className="day" key={index}>
-                <p className="dayName">
-                  {new Intl.DateTimeFormat(undefined, {
-                    hour: '2-digit',
-                    minute: '2-digit',
-                  }).format(new Date(forecast.dt_txt))}
-                </p>
+          <div className="forecast">
+           
+            <div className="upcoming">
+              {forecastData.map((forecast, index) => (
+                <div className="day" key={index}>
+                  <p className="dayName">
+                    {new Intl.DateTimeFormat(undefined, {
+                      hour: '2-digit',
+                      minute: '2-digit',
+                    }).format(new Date(forecast.dt_txt))}
+                  </p>
 
-                {forecast.weather[0]?.icon && (
-                  <img
-                    className="weatherIcon"
-                    src={`http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`}
-                    alt={forecast.weather[0].description}
-                  />
-                )}
-                <p className="temp">{forecast.main.temp}&deg;C</p>
-              </div>
-            ))}
+                  {forecast.weather[0]?.icon && (
+                    <img
+                      className="weatherIcon"
+                      src={`http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`}
+                      alt={forecast.weather[0].description}
+                    />
+                  )}
+                  <p className="temp">{forecast.main.temp}&deg;C</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
