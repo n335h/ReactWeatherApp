@@ -56,6 +56,7 @@ function App() {
         theme === 'light' ? 'lightMode' : 'darkMode'
       }`}
     >
+
       <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
       <div className="search">
         <input
