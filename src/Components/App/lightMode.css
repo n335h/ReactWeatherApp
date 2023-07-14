@@ -104,3 +104,14 @@
     outline: none;
     color: #6d6d6d;
   }
+  .upcoming {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    padding: 1rem 1rem;
+    
+    
+    }
