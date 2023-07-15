@@ -58,7 +58,10 @@ function App() {
       }`}
     >
       <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
-      <img className="logo" src={weatherApp} alt="" />
+      <div className="logoHead">
+        <img className="logo" src={weatherApp} alt="" />
+        <h1 className="title"> Weather Api</h1>
+      </div>
       <div className="search">
         <input
           className="searchBar"

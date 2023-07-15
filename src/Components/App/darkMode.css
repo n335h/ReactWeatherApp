@@ -15,7 +15,23 @@
     color: white;
 }
 
+.logoHead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:auto;
+  padding: 0 0 0 0;
+  width:100vw;
+  height: 100%;
 
+}
+.title {
+  font-size: 2.5rem;
+  padding: 1rem;
+  padding-top: 0;
+
+}
 
 body {
 font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',
@@ -51,7 +67,7 @@ justify-content: center;
 align-items: center;
 margin:auto;
 padding: 0 0 0 0;
-width:10vw;
+width:200px;
 height: 100%;
 color: #f36c1e;
 }
@@ -198,6 +214,29 @@ user-select: none;
 touch-action: manipulation;
 }
 
+.dark button {
+    background-color: #9e9e9e;
+    border: 0;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 0.8rem;
+    padding: .75rem 1rem;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+
+    
+}
 button:hover {
 background-color: rgb(253, 157, 93);
 }
