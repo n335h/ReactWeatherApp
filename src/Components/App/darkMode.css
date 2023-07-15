@@ -190,11 +190,25 @@ justify-content: space-between;
 align-items: center;
 border-radius: 12px;
 font-size: 0.8rem;
-padding: 1rem 1rem;
+padding: 1rem 0rem;
+}
+.forecastDeg {
+  font-size: 0.8rem;
+  color: #f36c1e;
+}
+.day {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 11vh;
 }
 
 .weatherIcon {
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .bottomSmall {

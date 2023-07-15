@@ -145,7 +145,10 @@ function App() {
                         alt={forecast.weather[0].description}
                       />
                     )}
-                    <p className="temp">{forecast.main.temp}&deg;C</p>
+                    <p className="temp">
+                      {forecast.main.temp}
+                      <span className="forecastDeg">&deg;</span>
+                    </p>
                   </div>
                 ))}
               </div>
