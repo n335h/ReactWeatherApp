@@ -444,6 +444,11 @@ input {
         width:70%;
         }
 
- 
+ .logo {
+  width: 40vw;
+ }
+ .title {
+  font-size: 2rem;
+ }
 }
       
