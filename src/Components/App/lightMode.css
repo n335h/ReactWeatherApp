@@ -45,9 +45,10 @@
     background: rgba(253, 253, 253, 0.1);
     color: #ffffff;
   
-    
-    }
-  
+  }
+  input:focus{
+    outline: 1px solid #f36c1e;
+  }
   .description {
     transform-origin: 0 0;
     transform: rotate(90deg);
@@ -84,18 +85,7 @@
     touch-action: manipulation;
   }
   
-  button:hover {
-    background-color: rgb(216, 135, 81);
-  }
-  
-  button:focus {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
-  
-  button:focus-visible {
-    box-shadow: none;
-  }
+
   .searchIcon {
     width: 20px;
     height: 20px;
