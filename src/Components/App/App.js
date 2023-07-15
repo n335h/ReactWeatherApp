@@ -4,6 +4,7 @@ import './lightMode.css';
 import './darkMode.css';
 import ThemeToggle from '../ThemeToggle';
 import weatherApp from '../../assets/weatherApp.png';
+import ghLogo from '../../assets/ghLogo.png';
 
 function App() {
   const [data, setData] = useState({});
@@ -201,6 +202,9 @@ function App() {
       )}
       <footer className="footer">
         <p> Created by Nicholas Horishny</p>
+        <a className='ghLink' href="https://github.com/n335h/ReactWeatherApp">
+          <img className="ghlogo" src={ghLogo} alt="" />
+        </a>
       </footer>
     </div>
   );
