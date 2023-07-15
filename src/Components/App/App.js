@@ -3,6 +3,7 @@ import axios from 'axios';
 import './lightMode.css';
 import './darkMode.css';
 import ThemeToggle from '../ThemeToggle';
+import weatherApp from '../../assets/weatherApp.png';
 
 function App() {
   const [data, setData] = useState({});
@@ -56,8 +57,8 @@ function App() {
         theme === 'light' ? 'lightMode' : 'darkMode'
       }`}
     >
-
       <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+      <img className="logo" src={weatherApp} alt="" />
       <div className="search">
         <input
           className="searchBar"
