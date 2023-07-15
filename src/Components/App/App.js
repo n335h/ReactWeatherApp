@@ -146,7 +146,7 @@ function App() {
                       />
                     )}
                     <p className="temp">
-                      {forecast.main.temp}
+                      {forecast.main.temp.toFixed(2).slice(0, 2)}
                       <span className="forecastDeg">&deg;</span>
                     </p>
                   </div>
