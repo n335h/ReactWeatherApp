@@ -307,7 +307,7 @@ box-shadow: none;
 #themeicon{
   height: 20px;
   opacity: 0.9;
-  margin: auto;
+  margin-left: -0.4rem;
   margin-top: 0.2rem;
 }
 
