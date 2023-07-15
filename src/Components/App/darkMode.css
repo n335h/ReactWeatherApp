@@ -339,7 +339,7 @@ input:checked + .slider:before {
   }
 
 input {
-  width: 30vw;
+  width: 31vw;
 }
   
 
@@ -362,7 +362,7 @@ input {
       font-size: small;
     }
     input {
-      width: 45vw;
+      width: 38vw;
     }
   
   .bottomSmall {
