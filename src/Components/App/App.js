@@ -199,6 +199,9 @@ function App() {
           </div>
         </div>
       )}
+      <footer className="footer">
+        <p> Created by Nicholas Horishny</p>
+      </footer>
     </div>
   );
 }
