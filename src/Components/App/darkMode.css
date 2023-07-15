@@ -107,13 +107,13 @@ z-index: -1;
   width: 1.5rem;
   height: 1.5rem;
   margin: 0 0.5rem;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 .ghlogoblk {
   width: 1.3rem;
   height: 1.3rem;
   margin: 0 0.5rem;
-  opacity: 0.4;
+  opacity: 0.3;
   color: #000000;
 }
 .ghLogo:hover{
