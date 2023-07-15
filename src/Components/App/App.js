@@ -59,11 +59,11 @@ function App() {
       }`}
     >
       <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
-      <div className="logoHead">
-        <img className="logo" src={weatherApp} alt="" />
-        <h1 className="title"> Weather Api</h1>
+      <div className="logoHead animate-pop-in">
+        <img className="logo animate-pop-in" src={weatherApp} alt="" />
+        <h1 className="title animate-pop-in"> Weather Api</h1>
       </div>
-      <div className="search">
+      <div className="search animate-pop-in">
         <input
           className="searchBar"
           value={location}
