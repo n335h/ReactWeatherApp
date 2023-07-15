@@ -138,7 +138,7 @@ padding: .7rem 1.5rem;
 font-size: 0.8rem;
 border-radius: 10px;
 border: 1px solid rgba(105, 105, 105, 0.1);
-background: rgba(253, 253, 253, 0.1);
+background: rgba(255, 255, 255, 0.842);
 color: #111111;
 width: 23vw;
 }
@@ -147,6 +147,9 @@ width: 23vw;
 :placeholder {
 color: #353535;
 }
+
+
+  
 
 .container {
 max-width: 30vw;
