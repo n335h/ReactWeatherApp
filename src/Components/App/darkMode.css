@@ -217,7 +217,7 @@ padding: 1rem 0rem;
 .bottomSmall {
 font-size: 0.7rem;
 align-self: flex-end;
-color: #000000;
+color: #ffffff;
 margin-bottom: 1rem;
 }
 
@@ -236,7 +236,7 @@ color: #f36c1e;
     padding: 0.5rem 1rem;
     flex-direction: column;
     border-radius: 12px;
-    background-color: rgba(255, 255, 255, 0.692);
+    background-color: rgba(114, 114, 114, 0.692);
     font-size: 0.7rem;
 }
   
