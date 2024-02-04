@@ -8,6 +8,7 @@ const Search = ({
 	<div className='search animate-pop-in'>
 		<input
 			className='searchBar'
+			data-testid='searchBar'
 			value={location}
 			onChange={(event) =>
 				setLocation(event.target.value)
@@ -20,7 +21,9 @@ const Search = ({
 			placeholder='Enter Location'
 			type='text'
 		/>
-		<button onClick={searchLocation}>
+		<button
+			data-testid='searchBtn'
+			onClick={searchLocation}>
 			Search
 		</button>
 	</div>
