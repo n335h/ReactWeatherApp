@@ -9,25 +9,6 @@ import {
 import '@testing-library/jest-dom';
 import Search from './search';
 
-// describe ( , () => {
-
-//     test ( , () => {
-//         render ( <Search
-//             location=''
-//             setLocation={() => {}}
-//             searchLocation={() => {}}
-//         />
-//         );
-
-//         const inputElement =
-//             screen.getByTestId('searchBar');
-//         const buttonElement =
-//             screen.getByTestId('searchBtn');
-
-//         expect(inputElement).toBeInTheDocument();
-//         expect(buttonElement).toBeInTheDocument();
-//     })
-// })
 describe('Search Component', () => {
 	test('renders the Search component', () => {
 		render(
