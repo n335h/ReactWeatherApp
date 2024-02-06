@@ -8,11 +8,11 @@ import './lightMode.css';
 import './darkMode.css';
 
 // components
-import ThemeToggle from '../ThemeToggle';
-import Search from '../../Components/search';
-import WeatherData from '../../Components/weatherData';
-import Footer from '../../Components/footer';
-import Header from '../../Components/header';
+import ThemeToggle from '../Components/ThemeToggle';
+import Search from '../Components/search';
+import WeatherData from '../Components/weatherData';
+import Footer from '../Components/footer';
+import Header from '../Components/header';
 
 import { useWeatherApi } from './api';
 
